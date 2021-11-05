@@ -1,0 +1,290 @@
+body {
+  font: 15px/sans-serif;
+  line-hieght:1.5;
+  color:#777;
+  margin:0;
+  padding:0;
+  background-color:#ffffff;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#283640;
+  border:0;
+  padding-left:20px;
+  padding-right:20px;
+  color:#ffffff;
+  transition: 0.3s ease;
+}
+
+/* Footer */
+footer{
+  padding:10px;
+  margin-top:10px;
+  color:#fff;
+  background-color:#3f565c;
+  border-top:#283640 8px solid;
+  text-align:center;
+  position: fixed;
+  left:0px; bottom:0px; right:0px;
+}
+
+/* Headerv*/
+header{
+  background:#3f565c;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#283640 8px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav {
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#cff1fa;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Top Section */
+#top{
+  min-height:400px;
+  background-image:url('../Aircraft/showcase.jpg')no repeat 0 -400px;
+  text-align:center;
+  color:#cccccc;
+}
+
+#top p{
+  font-size:20px;
+}
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#3f565c;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form{
+  float:right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:60px;
+}
+
+#categories .box{
+  float:left;
+  text-align:center;
+  width:40%;
+  padding:50px;
+  background-color:#f5f1e9;
+  overflow-x:hidden;
+}
+
+#categories .box img{
+  width:300px;
+  padding-top:50px;
+}
+
+/*CSS Contact Us*/
+.wrapper{
+  width: 715px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  font-size: 22px;
+  font-weight: 600;
+  float:center;
+  padding-top:20px;
+  margin-left: 20px;
+  padding-bottom:-10px;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+
+  border-bottom: 8px solid #ccc;
+}
+.wrapper p{
+  margin-left: 25px;
+}
+.wrapper form{
+  margin: 35px 30px 20px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #ccc;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #283640;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #283640;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 90%;
+  min-width: 90%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #283640;
+  transition background: 0.3s ease;
+}
+.button-area button:hover{
+  background: #cccccc;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+  .wrapper form{
+    margin: 35px 20px;
+  }
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  form .message textarea{
+    resize: none;
+  }
+  form .button-area{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .button-area button{
+    width: 100%;
+    padding: 11px 0;
+    font-size: 16px;
+  }
+  .button-area span{
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}
